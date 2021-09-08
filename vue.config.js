@@ -1,9 +1,9 @@
 module.exports = {
-  transpileDependencies: ['common'],
+  // transpileDependencies: ['common'],
   chainWebpack: config => {
     config.plugin('html')
       .tap((args) => {
-        args[0].title = 'qiankun-example'
+        args[0].title = 'qiankun-Demo'
         return args
       })
   }
